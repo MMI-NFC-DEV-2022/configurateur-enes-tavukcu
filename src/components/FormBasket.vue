@@ -5,6 +5,7 @@ import { FormKit }  from "@formkit/vue";
 import BasketProfil from "./BasketProfil.vue";
 import BasketDessus from "./BasketDessus.vue";
 import  { colors } from "@/types";
+import { materiaux } from "@/types";
 
 const props = defineProps<{
   data?: Basket;
@@ -63,6 +64,7 @@ type="radio"
 :sections-schema="{
     inner: { $el: null },
     decorator: { $el: null },
+    
 }"
 input-class="peer sr-only"
 options-class="flex items-center gap-2"
@@ -72,7 +74,9 @@ options-class="flex items-center gap-2"
     <div
         class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600"
         :style="{ backgroundColor: context.option.value }"
+
     />
+    
     <span class="sr-only">{{ context.option.value }}</span>
 </template>
 </FormKit>
