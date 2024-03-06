@@ -29,14 +29,161 @@ const chaussure = ref<Basket>(props.data ?? {});
 </div>
 
 <FormKit type="form" v-model="chaussure">
-<FormKit name="semelle" label="SEMELLE" value="#000000" type="radio" :options="colors"/>
-<FormKit name="empeigne" label="EMPEIGNE" value="#FFFFFF" type="radio" :options="colors" />
-<FormKit name="pointe" label="POINTE" value="#FFFFFF" type="radio" :options="colors" />
-<FormKit name="oeillet" label="OEILLET" value="#FFFFFF" type="radio" :options="colors" />
-<FormKit name="bande" label="BANDE" value="#FFFFFF" type="radio" :options="colors" />
-<FormKit name="languette" label="LANGUETTE" value="#000000" type="radio" :options="colors" />
-<FormKit name="lacet" label="LACET" value="#FFFFFF" type="radio" :options="colors" />
-<FormKit name="trimestre" label="TRIMESTRE" value="#FFFFFF" type="radio" :options="colors" />
+<FormKit 
+
+name="semelle" 
+label="SEMELLE" 
+value="#000000" 
+type="radio" 
+:options="colors"
+options-class="flex items-center gap-2"
+
+>
+<template #label="context">
+    <div
+        class="h-6 w-6 rounded-full "
+        :style="{ backgroundColor: context.option.value }"
+    />
+    
+</template>
+</FormKit>
+
+<FormKit 
+
+name="pointe" 
+label="POINTE" 
+value="#000000" 
+type="radio" 
+:options="colors"
+options-class="flex items-center gap-2"
+
+>
+<template #label="context">
+    <div
+        class="h-6 w-6 rounded-full "
+        :style="{ backgroundColor: context.option.value }"
+    />
+    
+</template>
+</FormKit>
+
+<FormKit 
+
+name="empeigne" 
+label="EMPEIGNE" 
+value="#000000" 
+type="radio" 
+:options="colors"
+options-class="flex items-center gap-2"
+
+>
+<template #label="context">
+    <div
+        class="h-6 w-6 rounded-full "
+        :style="{ backgroundColor: context.option.value }"
+    />
+    
+</template>
+</FormKit>
+
+<FormKit 
+
+name="oeillet" 
+label="OEILLET" 
+value="#000000" 
+type="radio" 
+:options="colors"
+options-class="flex items-center gap-2"
+
+>
+<template #label="context">
+    <div
+        class="h-6 w-6 rounded-full "
+        :style="{ backgroundColor: context.option.value }"
+    />
+    
+</template>
+</FormKit>
+
+<FormKit 
+
+name="bande" 
+label="BANDE" 
+value="#000000" 
+type="radio" 
+:options="colors"
+options-class="flex items-center gap-2"
+
+>
+<template #label="context">
+    <div
+        class="h-6 w-6 rounded-full "
+        :style="{ backgroundColor: context.option.value }"
+    />
+    
+</template>
+</FormKit>
+
+<FormKit 
+
+name="languette" 
+label="LANGUETTE" 
+value="#000000" 
+type="radio" 
+:options="colors"
+options-class="flex items-center gap-2"
+
+>
+<template #label="context">
+    <div
+        class="h-6 w-6 rounded-full "
+        :style="{ backgroundColor: context.option.value }"
+    />
+    
+</template>
+</FormKit>
+
+<FormKit 
+
+name="lacet" 
+label="LACET" 
+value="#000000" 
+type="radio" 
+:options="colors"
+options-class="flex items-center gap-2"
+
+>
+<template #label="context">
+    <div
+        class="h-6 w-6 rounded-full "
+        :style="{ backgroundColor: context.option.value }"
+    />
+    
+</template>
+</FormKit>
+
+<FormKit 
+
+name="trimestre" 
+label="TRIMESTRE" 
+value="#000000" 
+type="radio" 
+:options="colors"
+options-class="flex items-center gap-2"
+
+>
+<template #label="context">
+    <div
+        class="h-6 w-6 rounded-full "
+        :style="{ backgroundColor: context.option.value }"
+    />
+    
+</template>
+</FormKit>
+
+
 </FormKit>
 </div>
+
 </template>
+
