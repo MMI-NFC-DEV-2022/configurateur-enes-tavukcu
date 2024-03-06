@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { ChaussureSvg } from '@/types-svg';
+import type { Basket } from '@/types';
 
-withDefaults(defineProps<ChaussureSvg>(), {
+withDefaults(defineProps<Basket>(), {
     semelle: "red",
     empeigne: "white",
     pointe: "white",
