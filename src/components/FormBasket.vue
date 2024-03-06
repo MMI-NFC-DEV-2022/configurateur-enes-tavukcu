@@ -23,8 +23,8 @@ const chaussure = ref<Basket>(props.data ?? {});
 </ul>
 
 <div class="carousel w-64">
-<SvgProfil class="carousel-item w-64" v-bind="chaussure" id="profil" />
-<SvgDessus class="carousel-item w-64" v-bind="chaussure" id="dessus"/>
+<BasketProfil class="carousel-item w-64" v-bind="chaussure" id="profil" />
+<BasketDessus class="carousel-item w-64" v-bind="chaussure" id="dessus"/>
 </div>
 
 <FormKit type="form" v-model="chaussure">
