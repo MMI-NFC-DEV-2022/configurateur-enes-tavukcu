@@ -23,3 +23,4 @@ export const colors = {
     "#800000": "Marron",
     "#808000": "Olive",
 };
+
